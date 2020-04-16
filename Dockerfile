@@ -11,5 +11,8 @@ RUN apt-get update -y && apt-get install -y \
     perl \
     less \
     libpcre3-dev \
-    zsh
+    zsh \
+    fonts-powerline \
+    locales
 
+RUN locale-gen en_US.UTF-8
